@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/green"
+    tools:context=".RigesterFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_margin="80dp"
+        android:padding="30dp"
+        android:orientation="vertical">
+        <EditText
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:background="@drawable/edit_text_background"
+            android:id="@+id/rigester_username_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="username"
+            android:textColorHint="@color/hint_color"
+            android:inputType="text"/>
+
+        <EditText
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:background="@drawable/edit_text_background"
+            android:id="@+id/rigester_email_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email"
+            android:textColorHint="@color/hint_color"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:background="@drawable/edit_text_background"
+            android:id="@+id/rigester_password_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:textColorHint="@color/hint_color"
+            android:inputType="textPassword"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/rigester_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="rigester" />
+    </LinearLayout>
+
+</RelativeLayout>

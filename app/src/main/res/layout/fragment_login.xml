@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment">
+
+    <LinearLayout
+        android:id="@+id/linearloginlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_margin="80dp"
+        android:padding="30dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:background="@drawable/edit_text_background"
+            android:id="@+id/username_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="username"
+            android:textColorHint="@color/hint_color"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:background="@drawable/edit_text_background"
+            android:id="@+id/password_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:textColorHint="@color/hint_color"
+            android:inputType="textPassword"/>
+        <TextView
+            android:id="@+id/forget_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="forgot password"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/error_text"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/enter_button"
+            android:background="@drawable/button_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="enter"
+            />
+
+
+    </LinearLayout>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearloginlayout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="-59dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sign_in_button"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="-59dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/rigester_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rigester"
+            android:layout_alignBottom="@+id/sign_in_button"
+            android:layout_centerInParent="true"
+            android:textColor="#150E0E"
+            android:background="@color/secondary"
+            />
+        <TextView
+            android:id="@+id/do_not_have_accont_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rigester_sign_in"
+            android:layout_centerInParent="true"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
